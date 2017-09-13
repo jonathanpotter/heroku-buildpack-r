@@ -41,7 +41,10 @@ echo "BUILD_DIR: " $BUILD_DIR
 echo "CACHE_DIR: " $CACHE_DIR
 pwd
 sleep 5
+echo "ls -la"
 ls -la
+echo "ls -la ./app"
+ls -la ./app
 sleep 5
 exit 1
 
