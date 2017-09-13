@@ -2,6 +2,7 @@
 # bin/detect <build-dir>
 
 if [ -f $1/init.r ]; then
+  echo "This is R detect." && exit 1
   echo "R" && exit 0
 else
   echo "no" && exit 1
