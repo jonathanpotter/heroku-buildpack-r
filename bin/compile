@@ -36,6 +36,12 @@ LP_DIR=`cd $(dirname $0); cd ..; pwd`
 BUILDPACK_DIR="$(dirname $(dirname $0))"
 GCC_VERSION=4.8
 
+### DEBUG
+echo "The build dir:" $BUILD_DIR
+echo "The cache dir:" $CACHE_DIR
+exit 0
+### DEBUG
+
 # fix STACK variable if unset
 if [ -z "${STACK}" ];
 then
