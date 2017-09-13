@@ -57,8 +57,6 @@ echo "ls -la /tmp/cache"
 ls -la /tmp/cache
 echo "ls -la /tmp/cache/vendor"
 ls -la /tmp/cache/vendor
-echo "ls -la /tmp/garden-host"
-ls -la /tmp/garden-host
 echo "ls -la /tmp/lifecycle"
 ls -la /tmp/lifecycle
 echo "======================= DEBUG ======================="
