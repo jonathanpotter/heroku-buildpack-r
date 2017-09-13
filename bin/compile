@@ -36,12 +36,6 @@ LP_DIR=`cd $(dirname $0); cd ..; pwd`
 BUILDPACK_DIR="$(dirname $(dirname $0))"
 GCC_VERSION=4.8
 
-### DEBUG
-echo "The build dir:" $BUILD_DIR
-echo "The cache dir:" $CACHE_DIR
-exit 0
-### DEBUG
-
 # fix STACK variable if unset
 if [ -z "${STACK}" ];
 then
@@ -74,6 +68,12 @@ VENDOR_DIR="$BUILD_DIR/vendor"
 CRAN_MIRROR="http://cran.revolutionanalytics.com"
 
 mkdir -p $CACHE_DIR
+
+### DEBUG
+echo "DEBUG"
+printenv
+exit 0
+### DEBUG
 
 # vendor R into the slug
 echo "Vendoring R $R_VERSION for $STACK stack ($BUILD_PACK_VERSION)" | indent
