@@ -39,6 +39,11 @@ GCC_VERSION=4.8
 echo "======================= DEBUG ======================="
 echo "BUILD_DIR: " $BUILD_DIR
 echo "CACHE_DIR: " $CACHE_DIR
+pwd
+sleep 5
+ls -la
+sleep 5
+exit 1
 
 # fix STACK variable if unset
 if [ -z "${STACK}" ];
