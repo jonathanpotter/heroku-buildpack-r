@@ -62,7 +62,6 @@ ls -la /tmp/garden-host
 echo "ls -la /tmp/lifecycle"
 ls -la /tmp/lifecycle
 echo "======================= DEBUG ======================="
-exit 1
 
 # fix STACK variable if unset
 if [ -z "${STACK}" ];
