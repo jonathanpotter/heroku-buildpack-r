@@ -70,8 +70,8 @@ CRAN_MIRROR="http://cran.revolutionanalytics.com"
 mkdir -p $CACHE_DIR
 
 ### DEBUG
-echo "DEBUG"
-printenv
+echo "===========================DEBUG==========================="
+(set -o posix; set)
 exit 0
 ### DEBUG
 
