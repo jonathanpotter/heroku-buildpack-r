@@ -69,12 +69,6 @@ CRAN_MIRROR="http://cran.revolutionanalytics.com"
 
 mkdir -p $CACHE_DIR
 
-### DEBUG
-echo "===========================DEBUG==========================="
-(set -o posix; set)
-exit 0
-### DEBUG
-
 # vendor R into the slug
 echo "Vendoring R $R_VERSION for $STACK stack ($BUILD_PACK_VERSION)" | indent
 
