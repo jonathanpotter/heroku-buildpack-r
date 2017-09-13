@@ -39,13 +39,21 @@ GCC_VERSION=4.8
 echo "======================= DEBUG ======================="
 echo "BUILD_DIR: " $BUILD_DIR
 echo "CACHE_DIR: " $CACHE_DIR
+echo "pwd"
 pwd
-sleep 5
 echo "ls -la"
 ls -la
 echo "ls -la ./app"
 ls -la ./app
-sleep 5
+echo "ls -la /"
+ls -la /
+echo "ls -la /tmp"
+ls -la /tmp
+echo "ls -la /tmp/app"
+ls -la /tmp/app
+echo "ls -la /tmp/cache"
+ls -la /tmp/cache
+echo "======================= DEBUG ======================="
 exit 1
 
 # fix STACK variable if unset
